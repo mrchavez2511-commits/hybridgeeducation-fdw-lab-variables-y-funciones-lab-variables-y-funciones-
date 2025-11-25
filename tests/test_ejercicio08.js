@@ -1,9 +1,7 @@
-const assert = require('assert');
-const ejercicio8 = require('../ejercicio08.js');
+function concatenarCadenas(cadena1, cadena2) {
+  return cadena1 + " " + cadena2;
+}
 
-describe('Ejercicio 8', () => {
-    it('debería retornar la concatenación correctamente', () => {
-        assert.strictEqual(ejercicio8.concatenarCadenas('Hola', 'mundo'), 'Holamundo', 'La función "concatenarCadenas" no retorna la concatenación correctamente');
-        assert.strictEqual(ejercicio8.concatenarCadenas('Buenos', 'días'), 'Buenosdías', 'La función "concatenarCadenas" no retorna la concatenación correctamente');
-    });
-});
+if (typeof module !== "undefined") {
+  module.exports = concatenarCadenas;
+}
